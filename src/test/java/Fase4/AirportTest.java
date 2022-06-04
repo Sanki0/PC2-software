@@ -107,6 +107,7 @@ public class AirportTest {
             }
         }
     }
+
     @DisplayName("Dado que hay un vuelo premium")
     @Nested
     class PremiumFlightTest {
@@ -116,7 +117,7 @@ public class AirportTest {
 
         @BeforeEach
         void setUp() {
-            premiumFlight = new BusinessFlight("2");
+            premiumFlight = new PremiumFlight("3");
             jessica = new Passenger("Jessica", false);
             cesar = new Passenger("Cesar", true);
         }
